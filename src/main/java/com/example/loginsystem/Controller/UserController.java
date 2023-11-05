@@ -30,7 +30,7 @@ public class UserController {
         if(userRepository.existsByEmail(user.getEmail()))
         {
             model.addAttribute("emailError","Email already exists");
-            return "redirect:/register";
+            return "register";
         }
         else
         {
